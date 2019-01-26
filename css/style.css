@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
 body {
     margin: 0px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif; 
 }
-
 
 .hero {
     background: url(../img/bg.jpg);
@@ -287,6 +287,107 @@ content: '1';
 }
 
 
+.map_flex_left {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%; 
+}
+
+.map_logo {
+    width: 40%;
+    margin-top: 6em;
+}
+
+.map_box {
+    width: 50%;
+}
+
+.map_flex_right {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%; 
+
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#map {
+
+    
+}
+#map1 {
+}
+
+
+.map_box_flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.pin {
+font-size: 2em;
+padding:0; 
+margin: 1em 0 0 0;
+}
+
+.pin_wrapper {
+    position: relative;
+}
+
+.pin::before {
+    content: '';
+    background: url(../img/location-pin.png) no-repeat;
+    padding: 20px;
+    background-size: 40px;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    top:38px;
+    
+
+}
+
+
+
+.phone_info {
+    font-size: 2em;
+}
+
+.phone_info_wrapper {
+    position: relative;
+
+}
+
+.phone_info:before {
+    content: "";
+    background: url(../img/phone.png) no-repeat;
+    background-size: 30px;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: -45px;
+
+}
+
+
 
 
 @media screen and (max-width: 1100px) {
@@ -323,207 +424,6 @@ content: '1';
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-@media all and (max-width:30em) {
-
-    a.cta {
-        display: block;
-        margin: 0.4em auto;
-    }
-
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#map {
-    width:100%;
-    height: 500px;
-    background: #ffcc00;
-    
-}
-#map1 {
-    widows: 100%;
-    height: 500px;
-    background: #ffcc00;
-}
-
-
-.map-responsive{
-  overflow:hidden;
-  padding-bottom:53%;
-  position:relative;
-  height:0;
-}
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
-
-
-
-
-.mapky_left {
-  width: 50%;
-  float: left;
-  height: 500px;
-  text-align: center;
-}
-
-.mapky_right {
-  width: 50%;
-  float: right;
-  height: 500px;
-  text-align: center;
-}
-
-.mapky_left  {
-  margin: auto;
-}
-
-.pin_wrapper {
-  width: 100%;
-  position: relative;
-  margin: auto;
-  text-align: center;
-}
-
-.pin {
-  align-items: center;
-  display: flex;
-  width: 50%;
-  font-size: 2em;
-  margin-left: 30%;
-}
-
-.pin:before {
-  content: "";
-  background: url(../img/location-pin.png) no-repeat;
-  padding: 20px;
-  background-size: 30px;
-  width: 40px;
-  height: 50px;
-
-}
-
-
-/*
-.pin_img {
-  float: left;
-  vertical-align: middle;
-  position: absolute;
-  margin-top: 12px;
-  padding: 0 0 0 0%;
-
-}*/
-/*
-.pin:before {
-  content: "";  
-  background: url(../img/location-pin.png) no-repeat;
-  width: 50px;
-  height: 70px;
-  background-size: 40px;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 0;
-  top:20px;
-}
-*/
-
-.phone_info_wrapper {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.phone_info {
-  align-items: center;
-  display: flex;
-  width: 50%;
-  font-size: 2em;
-  margin-left: 30%;
-}
-
-.phone_info:before {
-  content: "";
-  vertical-align: baseline;
-  background: url(../img/phone.png) no-repeat;
-  padding: 20px;
-  background-size: 30px;
-  width: 40px;
-  height: 50px;
-
-}
-
-
-
-/*
-.phone_info:before {
-  content: "";  
-  background: url(../img/phone.png) no-repeat;
-  width: 50px;
-  height: 50px;
-  background-size: 50px;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  left: 0;
-
-
-}
-
-*/
-
-.modal-content {
-   color: black;
-}
-
-.modal-padding {
-   margin: 20px;
-   font-size: 16pt;
-}
-
-.chci_dodavku {
-   font-size: 35pt;
-   margin: 30px;
-   
-}
-
-
 @media only screen and (max-width: 900px) {
   .mapky_left {
       width: 100%;
@@ -542,3 +442,14 @@ content: '1';
       margin: auto;
   }
 }
+
+
+/*
+@media all and (max-width:30em) {
+
+    a.cta {
+        display: block;
+        margin: 0.4em auto;
+    }
+
+}*/
