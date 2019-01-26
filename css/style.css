@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
 body {
     margin: 0px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif !important; 
 }
 
 .hero {
@@ -29,6 +29,23 @@ body {
     font-size: 1.5em;
 }
 
+.contact a {
+    text-decoration: none;
+  color: #ffcc00;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .contact {
+        font-size:14px;
+    }
+}
+
+
+
 .logo {
     width: 70%;
 }
@@ -36,7 +53,7 @@ body {
 a.cta {
     display: inline-block;
     padding: 1em 4em;
-    margin: 0 0.3em 0.3em 0;
+    margin: 5em 0.3em 0.3em 0;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;
@@ -71,8 +88,29 @@ a.cta:active {
 a.arrow>img {
     width: 5rem;
     height: 5rem;
+    margin-top: 10em;
     animation: bounce 1s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
 }
 
 
@@ -85,7 +123,6 @@ a.arrow>img {
 #pricing h2 {
     padding: 0.5em 0.5em;
     margin: 0 0 0em 0;
-    font-family: Lato;
     font-size: 4em;
     text-align: center;
 
@@ -93,7 +130,6 @@ a.arrow>img {
 
 #pricing h3 {
     font-weight: 500;
-    font-family: Lato;
     font-size: 4em;
     text-align: center;
     padding: 0;
@@ -130,6 +166,58 @@ text-align: center;
 
 .price {
     background:#ffcc00;
+    
+}
+
+.price_test {
+    background:#ffcc00;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+ 
+
+.jen1 {
+    text-transform: uppercase;
+    font-size: 26pt;
+    align-self: flex-start;
+    padding: 0 0 0 1em;
+
+}
+
+.cena1 {
+    text-transform: uppercase;
+    font-size: 6vw;
+    padding: 0;
+    margin: 0;
+    line-height: 5vw;
+    font-weight: bold;
+
+}
+
+.kc1 {
+    text-transform: uppercase;
+    font-size: 26pt;
+    align-self: flex-end;
+    padding: .3em 1em 0 0;
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    .price_test {
+       
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0 ;
+    } 
+    .cena1 {
+        padding: 0 .3em;
+    }
 }
 
 .jen {
@@ -152,13 +240,13 @@ text-align: center;
 .kc {
     text-align: right;
     padding-bottom: 10px;
-    margin-right: 10%;
+    margin-right: 5%;
     line-height: 32px;
     font-size: 26pt;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .pricing_flex {
         align-items: flex-start;
         flex-wrap: wrap;
@@ -178,7 +266,22 @@ text-align: center;
 
 .dph {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+
 }
+
+.dph p {
+    padding-bottom: 1em;
+    margin: 0;
+}
+.dph p:first-child {
+    padding-top: 1em;
+}
+
+
 
 .black {
     background: black;
@@ -187,7 +290,6 @@ text-align: center;
 
 .req h2, .req h3 {
     color: #ffcc00;
-    font-family: 'Lato', sans-serif;
 }
 
 .req h2 {
@@ -198,7 +300,6 @@ text-align: center;
 
 .req_box h3 {
     color: #ffcc00;
-    font-family: 'Lato', sans-serif;
     font-size: 3rem;
 }
 
@@ -400,25 +501,6 @@ margin: 1em 0 0 0;
 }
 
 
-@keyframes bounce {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(-15px);
-    }
-}
-
-@-webkit-keyframes bounce {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(-15px);
-    }
-}
 
 
 
