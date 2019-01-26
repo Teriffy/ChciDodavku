@@ -62,15 +62,15 @@ End Cookie Consent plugin -->
 <body>
     <div class="hero">
         <div class="container_flex">
-            <div class="contact">Česká Lípa: <a href="tel:+420776776366">776 776 366</a> • Mladá Boleslav: <a href="tel:+420777605355">777 605 355</a></div>
+            <div class="contact">Česká Lípa: <a href="tel:+420776776366">776 776 366</a> • Mladá Boleslav: <a href="tel:+420777605355">777
+                    605 355</a></div>
         </div>
         <div class="container_flex">
             <img src="img/logo.png" alt="Půjč si mě" class="logo">
 
         </div>
         <div class="container_flex">
-            <!-- TODO: MODAL S POPUP -->
-            <a href="#" class="cta">Chci půjčit dodávku</a>
+            <a href="#popup1"  class="cta">Chci půjčit dodávku</a>
         </div>
 
         <div class="container_flex">
@@ -175,7 +175,7 @@ End Cookie Consent plugin -->
         <div class="container_flex">
 
 
-            <a href="#" class="more_info">CHCI VÍCE INFORMACÍ</a>
+            <a href="#" id="myBtn" class="more_info">CHCI VÍCE INFORMACÍ</a>
         </div>
     </div>
 
@@ -189,23 +189,23 @@ End Cookie Consent plugin -->
         <div class="map_flex_left">
             <div class="map_box">
                 <div class="map_box_flex">
-            <img class="map_logo" src="img/logo.png" alt="Pujč si mě logo">
-            
-            <div class="pin_wrapper">
-                <p class="pin ">Partyzánská 1032<br>47001 Česká Lípa</p>
-            </div>
+                    <img class="map_logo" src="img/logo.png" alt="Pujč si mě logo">
 
-            <div class="phone_info_wrapper">
-                 <p class="phone_info">+420 776 776 366</p>
+                    <div class="pin_wrapper">
+                        <p class="pin ">Partyzánská 1032<br>47001 Česká Lípa</p>
+                    </div>
+
+                    <div class="phone_info_wrapper">
+                        <p class="phone_info">+420 776 776 366</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-        <div class="map_box">
+            <div class="map_box">
                 <div id="map">
                     <div class="map-responsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.1219744639784!2d14.544178415911562!3d50.68056087863814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47096950e097459f%3A0x2af84597917a97e4!2zUGFydHl6w6Fuc2vDoSAxMDMyLzcsIDQ3MCAwMSDEjGVza8OhIEzDrXBh!5e0!3m2!1scs!2scz!4v1533979082494"
-                            frameborder="0" style="border:0" allowfullscreen></iframe> 
-                        </div>
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
 
 
@@ -214,66 +214,171 @@ End Cookie Consent plugin -->
 
 
         <div class="find_us">
-                <div class="map_flex_left">
-                    <div class="map_box">
-                        
-                            <div id="map1">
-                                    <div class="map-responsive">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.601181365915!2d14.914837215904285!3d50.411269798067984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470955a379fbc3dd%3A0x4876414999f1e615!2sn%C3%A1m.+Republiky+1160%2C+Mlad%C3%A1+Boleslav+III%2C+293+01+Mlad%C3%A1+Boleslav!5e0!3m2!1scs!2scz!4v1533978895437"
-                                            frameborder="0" style="border:0" allowfullscreen></iframe> </div>
-                                </div>
+            <div class="map_flex_left">
+                <div class="map_box">
+
+                    <div id="map1">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.601181365915!2d14.914837215904285!3d50.411269798067984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470955a379fbc3dd%3A0x4876414999f1e615!2sn%C3%A1m.+Republiky+1160%2C+Mlad%C3%A1+Boleslav+III%2C+293+01+Mlad%C3%A1+Boleslav!5e0!3m2!1scs!2scz!4v1533978895437"
+                                frameborder="0" style="border:0" allowfullscreen></iframe> </div>
+                    </div>
                 </div>
                 <div class="map_box">
                     <div class="map_box_flex">
                         <img class="map_logo" src="img/logo.png" alt="Pujč si mě logo" width="60%">
-            <div class="pin_wrapper">
+                        <div class="pin_wrapper">
 
-                <p class="pin top">Nám. Republiky 1160<br>29301 Mladá Boleslav</p>
-            </div>
-            <div class="phone_info_wrapper">
-                <p class="phone_info">+420 777 605 355</p>
+                            <p class="pin top">Nám. Republiky 1160<br>29301 Mladá Boleslav</p>
+                        </div>
+                        <div class="phone_info_wrapper">
+                            <p class="phone_info">+420 777 605 355</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Podmínky pro půjčení</h2>
+                    <p><strong>I.</strong></p>
+                    <p><strong>Předmět nájmu</strong></p>
+                    <p>Pronajímatel prohlašuje, že má souhlas vlastníka k pronájmu automobilu XY</p>
+                    <p>Včetně příslušenství: autolékárna, dálniční známka, osvědčení o registraci vozidla, zelená karta, reflexní vesta.</p>
+                    <p><strong>II.</strong></p>
+                    <p>Pronajímatel pronajímá touto smlouvou nájemci předmět nájmu shora označený a nájemce se zavazuje zaplatit za tento pronájem pronajímateli nájemné dle této smlouvy.</p>
+                    <p><strong>III.</strong></p>
+                    <p><strong>Trvání smlouvy</strong></p>
+                    <p>Nájemní smlouva se sjednává na dobu určitou, a to ode dne předání a převzetí předmětu nájmu.</p>
+                    <p>Datum a čas předání:</p>
+                    <p>Do:</p>
+                    <p><strong>IV.</strong></p>
+                    <p><strong>Nájemné</strong></p>
+                    <ol>
+                    <li>Nájemné dle této smlouvy činí xxx,- Kč s DPH za x dnů , počínaje časem předání a převzetí předmětu nájmu dle této smlouvy nájemcem + 2,- Kč s DPH za každý ujetý kilometr nad limit <strong>300 km denně</strong> . V případě překročení doby nájmu vozidla o více než 1h je účtována sazba za další započatý den dle předchozí sjednané ceny v této smlouvě.</li>
+                    <li>Nájemce je povinen uhradit jistinu za pronájem vozidla ve výši <strong>5000</strong> Kč, která bude vrácena při předání vozidla zpět nájemci za předpokladu, že bude vozidlo vráceno v původním stavu, ve kterém vozidlo nájemce převzal od pronajímatele. Stav celého vozidla (exteriér i interiér) bude vždy zaznamenán před jeho zapůjčením na videozáznam. Veškeré poškozené části budou také popsány v dodatku této smlouvy. Prohlídka vozu a videozáznam budou vždy provedeny za přítomnosti obou stran (nájemce i pronajímatele) a stav vozidla bude oběma stranami popsán a potvrzen v této smlouvě.</li>
+                    <li>Nájemné je splatné vždy před pronájmem vozidla, a to v hotovosti k rukám pronajímatele.</li>
+                    </ol>
+                    <p>Počáteční stav tachometru: xxx km</p>
+                    <p>Konečný stav tachometru: xxx km</p>
+                    <p><strong>V.</strong></p>
+                    <p><strong>Povinnosti pronajímatele</strong></p>
+                    <ol>
+                    <li>Pronajímatel se zavazuje předat předmět nájmu nájemci při podpisu této smlouvy v ulici Partyzánská 1032, Česká Lípa 47001 nebo náměstí Republiky 1160, 29301 Mladá Boleslav, popřípadě dle dohody.</li>
+                    <li>Předmět nájmu musí být ke dni jeho předání nájemci způsobilý k obvyklému provozu.</li>
+                    <li>Pronajímatel se zavazuje předat nájemci spolu s předmětem nájmu i veškeré potřebné doklady, zejména osvědčení o technickém průkazu a doklad o zákonném pojištění vozidla.</li>
+                    </ol>
+                    <p><strong>VI.</strong></p>
+                    <p><strong>Povinnosti nájemce</strong></p>
+                    <ol>
+                    <li>Nájemce není oprávněn poskytnout předmět nájmu k užívání třetí osobě, ani jej dále pronajmout.</li>
+                    <li>Dotankování vozidla do plné nádrže (vozidlo předáno s plnou nádrží). V případě nedotankování vozidla je účtován poplatek. Za 1l paliva 40 Kč.</li>
+                    <li>Nájemce se zavazuje používat předmět nájmu k účelům, k nimž obvykle slouží. Předmět nájmu nelze použít jako zástavu.</li>
+                    <li>Nájemce je oprávněn používat předmět nájmu mimo území ČR pouze s předchozím písemným souhlasem pronajímatele.</li>
+                    <li>Nájemce je povinen nahlásit stav tachometru vždy k 16. dni každého měsíce pronájmu pro potřeby účtování nájmu na tel. 776/776 366 nebo 777 605 355.</li>
+                    <li>Nájemce je povinen dostavit se s vozidlem, které je předmětem nájmu k pravidelné servisní prohlídce po předchozí domluvě s pronajímatelem. V případě, že tak neučiní, je nájemce odpovědný za škody vzniklé v souvislosti s nedostavením se k pravidelné prohlídce.</li>
+                    <li>V případě škodné události je nájemce povinen zavolat Policii ČR a sepsat protokol o způsobené škodě a informovat pronajímatele na tel. 776 776 366 nebo 777 605 355.</li>
+                    <li>V případě pokut a úhrady jiných sankčních poplatků třetím stranám, způsobených nájemcem vozidla je povinen nájemce tyto poplatky uhradit bez zbytečného prodlení pronajímateli vozidla, který následně zajistí jejich úhradu tomu, kdo tyto poplatky předepsal.</li>
+                    <li>Po skončení nájmu se nájemce zavazuje předat předmět nájmu pronajímateli na provozovně v Partyzánské ulici 1032 v České Lípě nebo náměstí Republiky 1160 v Mladé Boleslavi do 24h od zapůjčení, popř. dle dohody, včetně zapůjčeného příslušenství zmíněného v bodu I. Předmět nájmu. Nejpozději do 00 h. A to ve stavu, v jakém jej převzal s přihlédnutím k obvyklému opotřebení.</li>
+                    <li>V případě prodlení nájemce s vrácením předmětu nájmu je nájemce dále povinen hradit sjednané denní nájemné. A dále je povinen pronajímateli uhradit smluvní pokutu ve výši 500,- Kč za každý den prodlení.</li>
+                    <li>Nájemce je povinen při provozu pronajatého vozidla dodržovat všechny platné předpisy, zejména pravidla silničního provozu, a počínat si tak, aby nedošlo ke škodě na majetku a zdraví.</li>
+                    <li>Nájemce se zavazuje při ztrátě klíče od vozidla pronajímateli uhradit veškeré náklady spojené s nápravou tohoto stavu.</li>
+                    <li>Nájemce je povinen uhradit veškeré náklady spojené s likvidací škody, která vznikla na vozidle nebo v souvislosti s jeho provozem v období pronájmu, pokud nedodrží sjednané podmínky.</li>
+                    <li>Nájemce je povinen při dopravní nehodě způsobené jeho vinou, při nezjištění pachatele nehody nebo při jakémkoliv poškození vozidla a jeho příslušenství či v případech, kdy nelze uplatnit náhradu škody z jiného pojištění zaplatit spoluúčast ve výši 5%, minimálně však 5.000,- Kč (nedohodnou-li se obě strany jinak) a zaplatit odtah do pronajímatelem určené opravny. Popřípadě po dohodě obou smluvních stran do sídla pronajímatele.</li>
+                    <li>Při krádeži pronajatého vozidla je nájemce povinen zaplatit pronajímateli spoluúčast ve výši 5% z pořizovací ceny vozidla, minimálně však 5.000 Kč.</li>
+                    <li>V případě znečištění vozidla je nájemce povinen uhradit náklady na jeho čištění.</li>
+                    <li>Nájemce je povinen zdržet se kouření ve vozidle. V případě, že ve vozidle bude nájemce či třetí osoba kouřit, je nájemce povinen uhradit smluvní pokutu ve výši 500,- Kč.</li>
+                    <li>V případě ztráty nebo znehodnocení zapůjčené výbavy bude pronajímatel požadovat náhradu nebo finanční úhradu: auto lékárna 500,-Kč, dálniční známka 1.500,- Kč, osvědčení o registraci vozu 2.000,- Kč, zelená karta 500,- Kč, reflexní vesta 300,- Kč.</li>
+                    </ol>
+                    <p><strong>VII.</strong></p>
+                    <p><strong>Pojištění</strong></p>
+                    <p>Vozidlo je havarijně pojištěno s 5% spoluúčastí nájemce, minimálně však 5.000,- Kč (platí na veškeré poškození vozidla vč. poškození čelního skla). Veškerá pojištění stran předmětu nájmu zajišťuje pronajímatel a v případě pojistné události mu také náleží všechna pojistná plnění.</p>
+                    <p><strong>VIII.</strong></p>
+                    <p><strong>Skončení nájmu</strong></p>
+                    <p>Nájem dle této smlouvy skončí v souladu s ustanovením čl. III. této smlouvy, dále zničením předmětu nájmu, případně písemnou výpovědí jedné ze smluvních stran, když výpovědní doba činí 30 dnů a počíná běžet ode dne následujícího po jejím doručení druhé smluvní straně. Písemnou výpovědí lze ukončit pouze v případě hrubého porušení některého z ustanovení této smlouvy či ustanovení zákona jednou ze smluvních stran, přičemž hrubým porušením se rozumí takové jednání smluvní strany, které znemožní řádnou realizaci této smlouvy.</p>
+                    <p><strong>IX.</strong></p>
+                    <p><strong>Závěrečná ustanovení</strong></p>
+                    <ol>
+                    <li>Tato smlouva nabývá platnosti dnem podpisu smluvními stranami.</li>
+                    <li>Veškeré změny této smlouvy je možné učinit jen po vzájemné dohodě smluvních stran a v písemné formě.</li>
+                    <li>V případě, že některé ustanovení této smlouvy je nebo se stane neplatným, zůstávají ostatní ustanovení této smlouvy v platnosti. Strany se zavazují nahradit neplatné ustanovení smlouvy ustanovením jiným, které nejlépe svým obsahem a smyslem odpovídá obsahu a smyslu ustanovení původního.</li>
+                    <li>Tato smlouva se vyhotovuje ve dvou vyhotoveních, přičemž každá ze stran obdrží po jednom.</li>
+                    <li>Dle čl. 6 odst. 1 písm. a) a čl. 7 ​nařízení Evropského parlamentu a Rady (EU) 2016/679 ze dne 27. dubna 2016, o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů a o zrušení směrnice 95/46/EC („GDPR​“).</li>
+                    <li>Podpisem této smlouvy nájemce uděluje souhlas se zpracováním osobních údajů potřebných k zapůjčení vozu.</li>
+                    </ol>
         
-                    </div>
+                    <p>Provozovatel Česká Lípa: Yakuza s. r. o. Náměstí 14 Října 1307/2, 150 00 Praha - IČ: 24745146 DIČ: CZ24745146</p>
+                    <p>Provozovatel Mladá Boleslav: Jakub Pospíšil náměstí Republiky 1160, 29301 Mladá Boleslav - IČ: 68556012 DIČ:CZ7906130265</p>
+                    <br><br><br><br>
                 </div>
+            </div>
+
+        
+
+                
+         
+              
+             
 
 
+            <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                    </script>
 
+
+<style>
+</style>
+<div id="popup1" class="overlay">
+        <div class="popup">
+                <p class="van">Česká Lípa: <a href="tel:+420776776366">776 776 366</a> <br> Mladá Boleslav: <a href="tel:+420777605355">777
+                        605 355</a></p>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                  
+            </div>
+        </div>
     </div>
 
 
-
-
-
-
-    </div>
-
-
-
-
-
-    <div class="mapky">
-        <div class="mapky_left">
-            
-
-            <!--
+                           <!--
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlCsKVxPdOqvfTeOQM8xbFinGKSY8xniY&callback=initMap1">
         </script>    -->
-        </div>
-        <div class="mapky_right">
-            
-        </div>
-    </div>
 
-
-
-
-    <!--
+            <!--
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
 -->
 </body>
 
