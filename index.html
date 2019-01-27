@@ -4,17 +4,67 @@ TODO: Facebook share
 FIXME: Favicon and iphon icons
 TODO: Responsive Maps
 FIXME: Header Porovnat
+TODO: Run Audit 
+
+TODO: BEFORE LAUNCH
+- Add Analytics
+- Allow Robots in robots.txt
+- Cookie Consent
+
 
 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Potřebujete něco přivézt, odvézt, přemístit, či přestěhovat a nemáte čím? Rádi vám k tomu půjčíme dodávku. Krátkodobý i dlouhodobý pronájem dodávek." />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "AutoRental",
+          "name": "Půjčovna dodávek Česká Lípa",
+          "image": [
+            "http://chcidodavku.cz/img/pujcsime.jpg",
+            "http://chcidodavku.cz/img/43.jpg",
+            "http://chcidodavku.cz/img/169.jpg"
+           ],
+          "@id": "",
+          "url": "http://www.chcidodavku.cz",
+          "telephone": "776766366",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Partyzánská 1032/7",
+            "addressLocality": "Česká Lípa",
+            "postalCode": "47001",
+            "addressCountry": "CZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.6805575,
+            "longitude": 14.546367099999998
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+          },
+          "sameAs": "https://www.facebook.com/chcidodavku.cz"
+        }
+        </script>
+    <title>Půjčovna dodávek | Půjč si mě</title>
     <script>
         // Initialize and add the map
         function initMap() {
@@ -57,20 +107,13 @@ FIXME: Header Porovnat
             });
         }
     </script>
-    <!--
-                     Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent 
-<script type="text/javascript">
-window.cookieconsent_options = {"message":"Tento web používá cookies pro analýzu návštěvnosti.","dismiss":"Souhlasím","learnMore":"Více informací","link":"http://www.aluapneu.cz/cookies","theme":"dark-floating"};
-</script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-End Cookie Consent plugin -->
+           
 </head>
 
-<body>
-    <div class="hero">
+<body role="main">
+    <div class="hero" role="heading">
         <div class="container_flex">
-            <div class="contact">Česká Lípa: <a href="tel:+420776776366">776 776 366</a> • Mladá Boleslav: <a href="tel:+420777605355">777
+            <div class="contact" role="">Česká Lípa: <a href="tel:+420776776366">776 776 366</a> • Mladá Boleslav: <a href="tel:+420777605355">777
                     605 355</a></div>
         </div>
         <div class="container_flex">
@@ -86,7 +129,7 @@ End Cookie Consent plugin -->
         </div>
     </div>
 
-    <div id="pricing">
+    <div id="pricing" role="contentinfo">
         <h2>Kolik bude půjčení stát?</h2>
         <div class="pricing_flex">
             <div class="box">
@@ -156,7 +199,7 @@ End Cookie Consent plugin -->
     </div>
 
 
-    <div class="req black">
+    <div class="req black" role="text">
         <div class="container_flex">
             <h2 class="center">Co k půjčení potřebuji?</h2>
         </div>
@@ -233,7 +276,7 @@ End Cookie Consent plugin -->
                 </div>
                 <div class="map_box">
                     <div class="map_box_flex">
-                        <img class="map_logo" src="img/logo.png" alt="Pujč si mě logo" width="60%">
+                        <img class="map_logo" src="img/logo.png" alt="Pujč si mě logo" >
                         <div class="pin_wrapper">
 
                             <p class="pin top">Nám. Republiky 1160<br>29301 Mladá Boleslav</p>
@@ -382,12 +425,14 @@ End Cookie Consent plugin -->
                            <!--
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlCsKVxPdOqvfTeOQM8xbFinGKSY8xniY&callback=initMap1">
-        </script>    -->
+        </script>    
+        <script type="text/javascript">
+            window.cookieconsent_options = {"message":"Tento web používá cookies pro analýzu návštěvnosti.","dismiss":"Souhlasím","learnMore":"Více informací","link":"http://www.aluapneu.cz/cookies","theme":"dark-floating"};
+            </script>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+            
+            -->
 
-            <!--
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
--->
-</body>
+    </body>
 
 </html>

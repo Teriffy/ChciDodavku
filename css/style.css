@@ -26,7 +26,10 @@ body {
     border-bottom-left-radius: 10px;
     color: #ffcc00;
     padding: 1rem;
+    top: 0px;
     font-size: 1.5em;
+    position: fixed;
+    z-index: 2;
 }
 
 .contact a {
