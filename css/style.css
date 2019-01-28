@@ -45,7 +45,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .contact {
-        font-size:14px;
+        font-size:13px;
     }
 }
 
@@ -58,7 +58,7 @@ body {
 
 a.cta {
     display: inline-block;
-    padding: 1em 4em;
+    padding: 1em 3em;
     margin: 5em 0.3em 0.3em 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -188,7 +188,7 @@ text-align: center;
 
 .jen1 {
     text-transform: uppercase;
-    font-size: 26pt;
+    font-size: 4vh;
     align-self: flex-start;
     padding: 0 0 0 1em;
 
@@ -206,11 +206,15 @@ text-align: center;
 
 .kc1 {
     text-transform: uppercase;
-    font-size: 26pt;
+    font-size: 4vh;
     align-self: flex-end;
     padding: .3em 1em 0 0;
 
 
+}
+
+.price_test_mob, .mob_price {
+    display: none;
 }
 
 @media screen and (max-width: 1300px) {
@@ -221,6 +225,8 @@ text-align: center;
         align-items: center;
         padding: 1em 0 ;
     } 
+
+    
     .cena1 {
         padding: 0 .3em;
     }
@@ -256,6 +262,7 @@ text-align: center;
     .pricing_flex {
         align-items: flex-start;
         flex-wrap: wrap;
+        justify-content: center;
         
     }
 
@@ -263,12 +270,6 @@ text-align: center;
   }
 
 
-@media screen and (max-width: 700px) {
-    .pricing_flex {
-      flex-direction: column;
-    }
-
-  }
 
 .dph {
     text-align: center;
@@ -394,6 +395,74 @@ content: '1';
     
 }
 
+@media screen and (max-width: 700px) {
+    #pricing h2 {
+        font-size: 3em;
+    }
+
+    .box h3{
+        font-size: 3em !important;
+    }
+
+    .box li{
+        font-size:20pt;
+        padding: 10px;
+    }
+
+    .price_test {
+       display: none;
+    } 
+
+    .price_test_mob {
+        display: block;
+        background:#ffcc00;
+        width: 100%;
+        font-size: 2em;
+        padding: .6em 0em;
+    }
+
+    .mob_price {
+        display: block;
+    }
+
+    .dph {
+        font-size: 1em !important;
+        padding: 1em;
+    }
+
+    .req h2 {
+        font-size: 3em;
+    }
+
+    .req_box p {
+        font-size: 1em;
+        position: relative;
+        left: -87px;
+        width: 70vw;
+
+    }
+
+     .req_box br {
+        display: none;
+    } 
+    
+    .phone_info {
+        font-size: 1.5em !important;
+    }
+
+    .pin {
+        font-size: 1.5em !important;
+
+  }
+    .pin::before {
+        top: 30px !important;
+    }
+
+     .van {
+         font-size: 1em !important;
+     }
+}
+
 
 .map_flex_left {
     display: flex;
@@ -435,13 +504,6 @@ content: '1';
 }
 
 
-
-#map {
-
-    
-}
-#map1 {
-}
 
 
 .map_box_flex {
