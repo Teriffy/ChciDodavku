@@ -1,0 +1,11 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^chcidodavku.cz[nc]
+RewriteRule ^(.*)$ http://www.chcidodavku.cz/$1 [r=301,nc]
+
+//Caching schema
+<FilesMatch "\.(jpg|png|css)$">
+Header set Cache-Control "public, max-age=0"
+</FilesMatch>
+ 
