@@ -296,6 +296,10 @@ text-align: center;
     color: white;
 }
 
+.req {
+    font-family:sans-serif;
+}
+
 .req h2, .req h3 {
     color: #ffcc00;
 }
@@ -313,15 +317,21 @@ text-align: center;
 
 .prukazy::before {
 content: '1';
+font-family: 'Open Sans', sans-serif !important; 
+
 
 }
 
 .kauce:before{
     content: '2';
+    font-family: 'Open Sans', sans-serif !important; 
+
 }
 
 .pujcovne:before{
     content: '3';
+    font-family: 'Open Sans', sans-serif !important; 
+
 }
 
 .prukazy::before, .kauce:before, .pujcovne:before {
