@@ -1,0 +1,191 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Smlouva - Půjčení dodávky</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+              <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    </head>
+
+    <body>
+        <div style="text-align: right;
+        padding: 5px 20px;">
+            <a href="https://calendar.google.com/calendar/r" target="_blank" title="Otevřít kalendář"><i class="fas fa-calendar-alt"></i></a>
+          </div>
+
+        <div class="col-4 offset-md-4" style="margin-top: 10px;">
+          <h1 style="display:inline-block">Půjč si mě <span class="badge badge-warning">vytvoření smlouvy</span></h1>
+          <hr>
+        <form class="form-horizontal" action="form.php">
+            <div class="form-group row">
+              <label for="jmeno" class="col-4 col-form-label">Jméno a příjmení</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                    </div>
+                <input id="jmeno" name="jmeno" type="text" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text" class="col-4 col-form-label">Číslo OP</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-hashtag" ></i></span>
+                    </div>
+                <input id="text" name="cislo_op" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text4" class="col-4 col-form-label">Rodné číslo / IČO</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-hashtag"  ></i></span>
+                    </div>
+                <input id="text4" name="rc" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text2" class="col-4 col-form-label">Trvalý pobyt</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marker-alt"  ></i></span>
+                    </div>
+                <input id="text2" name="pobyt" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text1" class="col-4 col-form-label">Číslo ŘP</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-hashtag"  ></i></span>
+                    </div>
+                <input id="text1" name="rp" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text3" class="col-4 col-form-label">Telefonní číslo</label> 
+              <div class="input-group col-8">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"  ></i></span>
+                    </div>
+                <input id="text3" name="telefon" type="text" class="form-control">
+              </div>
+            </div> 
+            <div class="form-group row">
+                <label for="text4" class="col-4 col-form-label">Půjčení od</label> 
+                <div class="input-group col-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                      </div>
+                    <input data-provide="datepicker" name="pujceni_od" id="sandbox-container" data-date-format="dd.mm.yyyy" class="form-control"" ></input>
+                </div>
+                <div class="input-group col-4">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-clock"></i></span>
+                    </div>
+                  <input name="pujceni_od_time"  class="form-control"  ></input>       
+                  <div class="input-group-append">
+                      <span class="input-group-text">h</span>
+                    </div>     
+              </div>
+              </div> 
+              <div class="form-group row">
+                  <label for="text4" class="col-4 col-form-label">Vrácení do</label> 
+                  <div class="input-group col-4">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                        </div>
+                      <input data-provide="datepicker" name="pujceni_do"  data-date-format="dd.mm.yyyy" class="form-control"  ></input>            
+                  </div>
+                  <div class="input-group col-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-clock"></i></span>
+                      </div>
+                    <input type="text" name="pujceni_do_time" class="form-control"  ></input>       
+                    <div class="input-group-append">
+                        <span class="input-group-text">h</span>
+                      </div>     
+                </div>
+                </div> 
+              <div class="form-group row">
+                  <label for="text" class="col-4 col-form-label">Počet dnů</label> 
+                  <div class="input-group col-8">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"  ></i></span>
+                        </div>
+                    <input id="text" name="pocet_dnu" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text2" class="col-4 col-form-label">Částka</label> 
+                    <div class="input-group col-8">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-coins"  ></i></span>
+                          </div>
+                      <input id="text2" name="castka" type="text" class="form-control">
+                      <div class="input-group-append">
+                          <span class="input-group-text">,- Kč</span>
+                        </div>
+                    </div>
+                  </div>
+                <div class="form-group row">
+                  <label for="text1" class="col-4 col-form-label">Nájezd KM</label> 
+                  <div class="input-group col-8">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fas fa-tachometer-alt"   ></i></span>
+                        </div>
+                    <input id="text1" name="max_km" type="text" class="form-control">
+                    <div class="input-group-append">
+                      <span class="input-group-text">km</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select" class="col-4 col-form-label">Vozidlo</label> 
+                  <div class="input-group col-8">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="fas fa-truck"></i></span>
+                        </div>
+                    <select id="select" name="vozidlo" class="custom-select">
+                      <option value="" selected disabled hidden>Vyberte vozidlo</option>   
+                      <option value="" disabled>9 míst</option>
+                      <option value="Peugeot Boxer Modrý, RZ: XXX XXXX">Peugeot Boxer Modrý, RZ: XXX XXXX</option>
+                      <option value="" disabled>430cm</option>
+                      <option value="Fiat Ducato 2011 Bílý MAXI, RZ: XXX XXXX">Fiat Ducato 2011 Bílý MAXI, RZ: XXX XXXX</option>
+
+                     
+                    </select>
+                  </div>
+                </div> 
+            <div class="form-group row">
+              <div class="offset-4 col-8">
+                <button name="submit" type="submit" class="btn btn-warning btn-lg btn-block"><i class="fas fa-file-signature"></i> Vytvořit smlouvu</button>
+                <button name="" type="" disabled class="btn btn-warning btn-lg btn-block"><i class="fas fa-receipt"></i> Vytvořit doklad</button>
+              </div>
+            </div>
+</form>
+</div>
+
+
+
+  
+
+
+
+ 
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script>
+       $('#sandbox-container .input-daterange').datepicker({
+    format: "dd.mm.yyyy",
+    todayBtn: "linked"
+});
+        </script>
+    </body>
+</html>
