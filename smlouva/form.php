@@ -46,6 +46,9 @@
 <li>Při kr&aacute;deži pronajat&eacute;ho vozidla je n&aacute;jemce povinen zaplatit pronaj&iacute;mateli spolu&uacute;čast ve v&yacute;&scaron;i 5% z&nbsp;pořizovac&iacute; ceny vozidla, minim&aacute;lně v&scaron;ak 5000 Kč.</li>
 <li>V&nbsp;př&iacute;padě zneči&scaron;těn&iacute; vozidla je n&aacute;jemce povinen uhradit n&aacute;klady na jeho či&scaron;těn&iacute;.</li>
 <li>N&aacute;jemce je povinen zdržet se kouřen&iacute; ve vozidle. V&nbsp;př&iacute;padě, že ve vozidle bude n&aacute;jemce či třet&iacute; osoba kouřit, je n&aacute;jemce povinen uhradit smluvn&iacute; pokutu ve v&yacute;&scaron;i 500,- Kč.</li>
+<li>V&nbsp;př&iacute;padě ztr&aacute;ty nebo znehodnocen&iacute; zapůjčen&eacute; v&yacute;bavy bude pronaj&iacute;matel požadovat n&aacute;hradu nebo finančn&iacute; &uacute;hradu: auto l&eacute;k&aacute;rna 500,-Kč, d&aacute;lničn&iacute; zn&aacute;mka 1.500,- Kč, osvědčen&iacute; o registraci vozu 2.000,- Kč, zelen&aacute; karta 500,- Kč, reflexn&iacute; vesta 300,- Kč.
+</li>
+<li>V př&iacute;padě využ&iacute;v&aacute;n&iacute; dod&aacute;vky mimo &uacute;zem&iacute; ČR nebudou n&aacute;mi hrazeny n&aacute;klady způsoben&eacute; poruchou půjčen&eacute;ho vozidla, jeho odtahu a n&aacute;klady spojen&eacute; s t&iacute;m.</li>
 </ol>
 <h2><strong>VII.&nbsp;</strong><strong>Poji&scaron;těn&iacute;</strong></h2>
 <p>Vozidlo je havarijně poji&scaron;těno s&nbsp;5% spolu&uacute;čast&iacute; n&aacute;jemce, minim&aacute;lně v&scaron;ak 5000 Kč (plat&iacute; na ve&scaron;ker&eacute; po&scaron;kozen&iacute; vozidla vč. po&scaron;kozen&iacute; čeln&iacute;ho skla). Ve&scaron;ker&aacute; poji&scaron;těn&iacute; stran předmětu n&aacute;jmu zaji&scaron;ťuje pronaj&iacute;matel a v&nbsp;př&iacute;padě pojistn&eacute; ud&aacute;losti mu tak&eacute; n&aacute;lež&iacute; v&scaron;echna pojistn&aacute; plněn&iacute;.</p>
